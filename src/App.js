@@ -5,6 +5,8 @@ import { Navbar } from './components/Navbar'
 import { Routes } from './components/Routes'
 
 const App = () => {
+    const [darkTheme, setDarkTheme] = useState(false)
+    
     return (
         <div>
             <h1>App</h1>
