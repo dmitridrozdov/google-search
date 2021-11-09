@@ -9,7 +9,10 @@ const App = () => {
     
     return (
         <div className={darkTheme ? 'dark' : ''}>
-            <h1>App</h1>
+            <div className="dark:bg-gray-900 bg-gray-100 dark:text-gray-200 black min-h-screen">
+                <h1>App</h1>   
+            </div>
+            
         </div>
     )
 }
