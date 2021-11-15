@@ -1,13 +1,15 @@
 import React from 'react'
-import { Switch, Route, Redirect } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 
-export const Routes = () => {
+import { Results } from './Results'
+
+export const RoutesComponent = () => {
     return (
         <div className="p-4">
-            <Switch>
-                <Route exact path="/">
-                    <Redirect to="/search" />
-                </Route>
+            <Routes>
+                {/* <Route exact path="/">
+                    <Navigate to="/search" />
+                </Route> */}
                 <Route exact path="/search">
                     <Results />
                 </Route>
@@ -20,7 +22,7 @@ export const Routes = () => {
                 <Route path="/videos">
                     <Results />
                 </Route>
-            </Switch>
+            </Routes>
         </div>
     )
 }
